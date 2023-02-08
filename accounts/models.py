@@ -7,4 +7,4 @@ class Account(models.Model):
     holder = models.CharField(max_length=50)
     currency = models.CharField(max_length=20)
     locked = models.BooleanField()
-    comment = models.CharField(max_length=50)
+    comment = models.CharField(max_length=50, blank=True)
