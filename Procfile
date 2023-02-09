@@ -1,0 +1,1 @@
+web: gunicorn 'finances_helper.wsgi'
