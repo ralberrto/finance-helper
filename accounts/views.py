@@ -24,3 +24,8 @@ class AccountRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
     lookup_field = "id"
     queryset = Account.objects.all()
     serializer_class = AccountDetailsSerializer
+
+
+class AccountDeleteAPIView(generics.DestroyAPIView):
+    lookup_field = "id"
+    queryset = Account.objects.all()
