@@ -17,4 +17,9 @@ urlpatterns = [
         views.AccountRetrieveUpdateAPIView.as_view(),
         name="account_update",
     ),
+    path(
+        "accounts/delete/<int:id>",
+        views.AccountDeleteAPIView.as_view(),
+        name="account_delete",
+    ),
 ]
