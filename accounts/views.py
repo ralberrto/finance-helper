@@ -18,3 +18,9 @@ class AccountDetailsAPIView(generics.RetrieveAPIView):
 class AccountCreateAPIView(generics.CreateAPIView):
     queryset = Account.objects.all()
     serializer_class = AccountDetailsSerializer
+
+
+class AccountRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
+    lookup_field = "id"
+    queryset = Account.objects.all()
+    serializer_class = AccountDetailsSerializer
