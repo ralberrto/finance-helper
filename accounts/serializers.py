@@ -11,3 +11,16 @@ class AccountListSerializer(serializers.ModelSerializer):
             "holder",
             "currency",
         ]
+
+
+class AccountDetailsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Account
+        fields = [
+            "id",
+            "name",
+            "holder",
+            "currency",
+            "locked",
+            "comment",
+        ]
